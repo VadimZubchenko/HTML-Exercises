@@ -5,11 +5,68 @@ body {
 
 h1 {
   font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  margin: 10px;
 }
+
 p {
   font-size: 12px;
   color: lightgray;
+  padding: 10px;
+  margin: 10px;
 }
+
+a {
+  margin: 10px;
+}
+
 div {
   border-style: dotted;
+  border-width: 2px;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+.letter {
+  list-style-type: lower-alpha;
+}
+.square {
+  list-style-type: square;
+}
+
+/* CSS classes of Second Page */
+
+body.secPage {
+  background-color: lightblue;
+  color: green;
+}
+
+h1.border {
+  border-style: solid;
+  border-color: black;
+}
+h4 {
+  margin: 10px;
+  padding: 10px;
+}
+
+p.secPage {
+  background-color: rgb(99, 169, 161);
+  border-style: solid;
+  border-radius: 10px;
+  border-color: black;
+  border-width: 2px;
+}
+
+img {
+  width: 150px;
+}
+img.secPage {
+  margin: 40px;
+}
+label {
+  margin-left: 30%;
+  margin-top: 30px;
 }
