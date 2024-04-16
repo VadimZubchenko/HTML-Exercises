@@ -17,7 +17,7 @@ p,
 h2 {
   font-size: 12px;
   color: black;
-  padding-left: 10px;
+  text-align: center;
 }
 
 a {
@@ -33,11 +33,19 @@ div {
   margin: 10px;
 }
 
-.letter {
+ol.letter {
   list-style-type: lower-alpha;
+  font-size: 12px;
 }
-.square {
+ul.square {
   list-style-type: square;
+  font-size: 12px;
+}
+
+article.first_page {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* CSS classes of Second Page */
@@ -85,25 +93,26 @@ nav {
   text-align: center;
   padding: 5px;
 }
-#section {
+section {
   background-color: rgb(106, 159, 112);
 }
 #footer {
   background-color: cadetblue;
 }
 
-#vertical {
+nav#vertical {
   float: left;
   width: 30%;
   height: 200px;
   background: #ccc;
   text-align: left;
+  padding: 0;
 }
 nav ul {
   list-style-type: none;
   padding: 0px;
 }
-article {
+article#vertical {
   float: right;
   width: 70%;
   height: 200px;
@@ -113,7 +122,8 @@ article {
 
 /* unvisited link */
 a:link {
-  text-decoratio∏n: none;
+  text-decoration: none;
+  color: blueviolet;
 }
 /* visited link */
 a:visited {
@@ -127,6 +137,7 @@ a:hover {
 }
 /* selected link */
 a:active {
+  color: blue;
   text-decoration: none;
 }
 /* Clear floats after the columns */
@@ -142,6 +153,6 @@ footer {
   background-color: gray;
 }
 
-.second_page {
+nav.second_page {
   background-color: rgba(148, 162, 162, 0.391);
 }
