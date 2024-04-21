@@ -42,7 +42,7 @@ ul.square {
   list-style-type: square;
   font-size: 12px;
 }
-
+/* only for tag article with "first_page" classes  */
 article.first_page {
   width: 90%;
   margin-left: auto;
@@ -51,6 +51,7 @@ article.first_page {
 
 /* CSS classes of Second Page */
 
+/* only for body-element with 'secPage classes'  */
 body.secPage {
   background-color: lightblue;
   color: green;
@@ -64,7 +65,7 @@ h4 {
   margin: 10px;
   padding: 10px;
 }
-
+/* only for p-element with 'secPage classes'  */
 p.secPage {
   background-color: rgb(99, 169, 161);
   border-style: solid;
@@ -97,30 +98,34 @@ nav {
 section {
   background-color: rgb(106, 159, 112);
 }
-#footer {
-  background-color: cadetblue;
-}
 
+* {
+  box-sizing: border-box;
+}
+/* only nav-element with id=vertical */
 nav#vertical {
   float: left;
   width: 30%;
-  height: 200px;
-  background: #ccc;
+  background-color: #ccc;
   text-align: left;
-  padding: 0;
+  height: 200px;
 }
 nav ul {
   list-style-type: none;
   padding: 0px;
 }
+/* only article-element with id=vertical */
 article#vertical {
-  float: right;
+  float: left;
   width: 70%;
-  height: 200px;
   background-color: aliceblue;
+  height: 200px;
   color: black;
 }
 
+/* All below CSS ':' mean pseudo-classes   
+  A pseudo-class is used to define a special state of an element.
+*/
 /* unvisited link */
 a:link {
   text-decoration: none;
@@ -141,19 +146,36 @@ a:active {
   color: blue;
   text-decoration: none;
 }
-/* Clear floats after the columns */
+/* Clear floats after the columns 
+A CSS pseudo-element '::' is used to style specified parts of an element.
+The ::after pseudo-element can be used to insert some content after the content of an element.
+display: table means position of content as block
+clear: both  The element is pushed below both left and right floated elements
+*/
+
 section::after {
   content: "";
   display: table;
   clear: both;
 }
-footer {
-  text-align: center;
-  padding: 5px;
-  font-size: 12px;
+
+footer p {
   background-color: gray;
+  padding: 5px;
+  text-align: center;
+  font-size: 12px;
+  margin: auto;
+  color: white;
 }
 
 nav.second_page {
   background-color: rgba(148, 162, 162, 0.391);
+}
+/* If the browser window is 600px or smaller */
+@media (max-width: 600px) {
+  nav#vertical,
+  article#vertical {
+    width: 100%;
+    height: auto;
+  }
 }
