@@ -23,9 +23,9 @@ body.secPage {
 * {
   box-sizing: border-box;
 }
-
+/* em is a same as default 16px  */
 h1 {
-  padding: 10px;
+  padding: 1em;
   text-align: center;
   margin: 0px;
 }
@@ -35,23 +35,25 @@ h3 {
 }
 
 p {
-  font-size: 12px;
-  color: black;
-  text-align: auto;
-  padding: 10px;
+  font-size: 0.9em;
+  color: lightgray;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 0px;
+  text-align: justify;
 }
 
-a {
-  margin-left: 10px;
-  font-size: 12px;
-}
-
-div {
+.div_first_page {
   border-style: dotted;
   border-width: 2px;
   width: 100px;
   height: 100px;
   margin: 10px;
+}
+
+a {
+  margin-left: 10px;
+  font-size: 12px;
 }
 
 ol.letter {
@@ -114,7 +116,7 @@ nav {
 }
 section {
   background-color: rgb(106, 159, 112);
-  height: 100%;
+  height: calc(100vh - 120px);
 }
 
 /* only nav-element with id=vertical */
