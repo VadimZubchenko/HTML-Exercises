@@ -4,22 +4,20 @@ body {
   margin-right: auto;
   background-color: black;
   color: white;
-  height: calc(100vh - 120px);
+  height: 100vh;
 }
 body.firstPage {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
   background-color: black;
   color: white;
-  height: calc(100vh - 240px);
+  padding: 0%;
 }
 
 /* only for body-element with 'secPage classes'  */
 body.secPage {
   background-color: lightblue;
   color: green;
-  max-height: calc(100vh - 100px);
+  height: auto;
+  min-height: 100%;
 }
 
 * {
@@ -119,9 +117,6 @@ section {
   height: 100%;
 }
 
-* {
-  box-sizing: border-box;
-}
 /* only nav-element with id=vertical */
 nav#vertical {
   float: left;
