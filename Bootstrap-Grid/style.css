@@ -1,0 +1,9 @@
+.first .col {
+  background-color: aquamarine;
+  border: 1px solid black;
+  min-height: 2rem;
+}
+.second .col {
+  background-color: rgb(181, 229, 157);
+  border: 1px solid black;
+}
