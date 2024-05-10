@@ -6,23 +6,47 @@
     <title>Boostrap Grid</title>
     <!-- Bootstrap -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <div class="row first align-items-start">
-        <div class="col">One column of first row</div>
-        <div class="col">Sec column of first row</div>
-        <div class="col">Third column of first row</div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" href="#"
+            >Home <span class="sr-only">(current)</span></a
+          >
+          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link disabled">Disabled</a>
+        </div>
       </div>
-      <div class="row second">
-        <div class="col">One column of second row</div>
-        <div class="col">Sec column of second row</div>
+    </nav>
+    <div class="container-fluid text-center">
+      <div class="row first">
+        <div class="col first">One column of first row</div>
+        <div class="col first">Sec column of first row</div>
+        <div class="col first">Third column of first row</div>
+      </div>
+      <div class="row">
+        <div class="col second">One column of second row</div>
+        <div class="col second">Sec column of second row</div>
       </div>
     </div>
   </body>

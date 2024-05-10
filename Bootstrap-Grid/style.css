@@ -1,9 +1,14 @@
-.first .col {
-  background-color: aquamarine;
-  border: 1px solid black;
-  min-height: 2rem;
+.row .first {
+  background-color: black;
+  color: white;
 }
-.second .col {
+.first {
+  border: 1px solid white;
+  min-height: 2rem;
+  text-align: center;
+}
+.second {
   background-color: rgb(181, 229, 157);
   border: 1px solid black;
+  min-height: 2rem;
 }
