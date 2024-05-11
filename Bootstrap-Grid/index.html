@@ -14,40 +14,49 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link active" href="#"
-            >Home <span class="sr-only">(current)</span></a
-          >
-          <a class="nav-link" href="#">Features</a>
-          <a class="nav-link" href="#">Pricing</a>
-          <a class="nav-link disabled">Disabled</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link disabled">Disabled</a>
+          </div>
         </div>
       </div>
     </nav>
-    <div class="container-fluid text-center">
-      <div class="row first">
+    <div class="container h-100 text-center">
+      <div class="row flex-grow-1 first">
         <div class="col first">One column of first row</div>
         <div class="col first">Sec column of first row</div>
         <div class="col first">Third column of first row</div>
       </div>
-      <div class="row">
+      <div class="row flex-grow-1">
         <div class="col second">One column of second row</div>
         <div class="col second">Sec column of second row</div>
       </div>
     </div>
+    <footer class="bd-footer py-2 bg-dark text-center">
+      <div class="container text-white-50">
+        <div class="row">
+          <div class="col">@Vadim Zubchenko</div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

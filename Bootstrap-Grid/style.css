@@ -1,14 +1,19 @@
+html,
+body {
+  height: 100%;
+}
+
 .row .first {
-  background-color: black;
-  color: white;
+  background-color: rgb(153, 102, 102);
+  border: 1px solid white;
+  border-collapse: collapse;
 }
 .first {
-  border: 1px solid white;
-  min-height: 2rem;
-  text-align: center;
+  border: 2px solid white;
+  height: 300px;
 }
 .second {
   background-color: rgb(181, 229, 157);
-  border: 1px solid black;
-  min-height: 2rem;
+  border: 2px solid white;
+  height: 300px;
 }
