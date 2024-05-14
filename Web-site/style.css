@@ -10,7 +10,8 @@ body {
 .card {
   border-radius: 1em;
   text-align: center;
-  margin: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 1em;
 }
 .card:hover {
   background-color: rgb(255, 228, 196, 0.3);
@@ -20,5 +21,40 @@ body {
   border-radius: 50%;
   width: 60%;
   margin: auto;
-  padding: 1em;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  margin-top: auto;
+  border-radius: 100px;
+  background-color: rgba(42, 112, 169, 0.5);
+  color: black;
+  border: none;
+  padding: 10px 15px;
+}
+
+.my-carousel {
+  background-color: rgb(255, 228, 196, 0.3);
+}
+
+.my-carousel .carousel-item {
+  display: flex;
+  max-height: 500px;
+}
+
+.my-carousel .carousel-item img {
+  border-radius: 1em;
+  object-fit: none;
+  object-position: 100% 100%;
+}
+
+p {
+  font-size: 2rem;
+  text-align: justify;
 }
