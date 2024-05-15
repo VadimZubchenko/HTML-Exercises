@@ -45,7 +45,7 @@ body {
 
 .my-carousel .carousel-item {
   display: flex;
-  max-height: 500px;
+  max-height: 600px;
 }
 
 .my-carousel .carousel-item img {
@@ -54,7 +54,7 @@ body {
   object-position: 100% 100%;
 }
 
-p {
+.second p {
   font-size: 2rem;
   text-align: justify;
 }
